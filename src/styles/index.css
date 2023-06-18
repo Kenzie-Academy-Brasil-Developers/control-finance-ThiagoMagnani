@@ -1,1 +1,266 @@
 /* Desenvolva a estilização da sua página aqui */
+
+header{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    height: 110px;
+    background-color: var(--color-grey-5);
+}
+
+.spanTitleColor{
+    color: var(--color-brand-1);
+}
+
+.buttonHeader{
+    padding: 0.75em;
+    border: none;
+    border-radius: var(--radius-1);
+    background-color: var(--color-brand-1);
+    color: var(--color-mode);
+    font-size: var(--font-size-3);
+}
+
+.buttonHeader:hover{
+    background-color: var(--color-brand-2);
+    cursor: pointer;
+}
+
+#app{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.modal_controller{
+    width: 26rem;
+    height: 21rem;
+    border: none;
+    border-radius: var(--radius-1);
+}
+
+.modal_controller::backdrop{
+    background: rgba(0,0,0, .4);
+}
+
+.modal_container{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    height: 20rem;
+}
+
+.modal_container_header{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: -2rem;
+}
+
+.buttonCloseModal{
+    display: flex;
+    align-items: center;
+    border: none;
+    font-size: 1.2rem;
+    background-color: var(--color-grey-5);
+    border-radius: var(--radius-2);
+    color: var(--color-grey-2);
+}
+
+.buttonCloseModal:hover{
+    cursor: pointer;
+}
+
+.titleModal{
+    font-size: var(--font-size-1);
+    color: var(--color-grey-1);
+    font-weight: bold;
+}
+
+.textModal{
+    color: var(--color-grey-2);
+    font-size: var(--font-size-2);
+    font-family: var(--font-family-2);
+}
+
+.modal_container_botton{
+    display: flex;
+    justify-content: end;
+    gap: 0.8rem;
+}
+
+.modal_container_value{
+    display: flex;
+    flex-direction: column;
+    gap: 0.6rem;
+}
+
+.cancelModal{
+    border: none;
+    padding: 0.6rem;
+    border-radius: var(--radius-1);
+    background-color: var(--color-grey-4);
+}
+
+.cancelModal:hover{
+    cursor: pointer;
+}
+
+.addValueModal{
+    border: none;
+    padding: 0.6rem 1rem;
+    border-radius: var(--radius-1);
+    background-color: var(--color-brand-1);
+    color: var(--color-mode);
+}
+
+.addValueModal:hover{
+    cursor: pointer;
+}
+
+.divType{
+    display: flex;
+    gap: 1.1rem;
+}
+
+.type{
+    border: none;
+    font-size: var(--font-size-2);
+    background-color: var(--color-grey-5);
+    border-radius: var(--radius-2);
+}
+
+.titleType{
+    font-size: var(--font-size-2);
+}
+
+.boxSumValues{
+    border-radius: var(--radius-1);
+    border: 3px solid var(--color-grey-4);
+    background-color: var(--color-grey-5);
+    width: 66.6%;
+    display: flex;
+    justify-content:space-between;
+    align-items: end;
+    padding: 0 1rem;
+}
+
+.divBoxValue{
+    border: 2px solid;
+    padding: 0.5rem 0.5rem;
+    background-color: var(--color-mode);
+    border-radius: var(--radius-1);
+    width: auto;
+}
+
+.boxValue{
+    width: 90%;
+    height: auto;
+    border: none;
+    outline: none;
+    background-color: transparent;
+    color: var(--color-grey-3);
+}
+
+.divList{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 68.5%;
+}
+
+.list{
+    padding: 0;
+    list-style: none;
+    width: 100%;
+}
+
+li{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border: 2.5px solid var(--color-grey-5);
+    margin: 0 0 0.8rem 0;
+    padding: 0 1rem 0 1rem;
+    border-radius: var(--radius-1);
+}
+
+.remove{
+    padding: 0.4rem 0.3rem;
+    border: none;
+    border-radius: var(--radius-2);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.remove:hover{
+    cursor: pointer;
+}
+
+.remove-border{
+    border: 2px solid var(--color-grey-4);
+    border-radius: var(--radius-2);
+    background-color: var(--color-mode);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.span-entrada{
+    background-color: var(--color-grey-4);
+    border-radius: var(--radius-2);
+    padding: 0.4375rem 0.875rem ;
+}
+
+.span-saida{
+    background-color: var(--color-grey-4);
+    border-radius: var(--radius-2);
+    padding: 0.4375rem 1.475rem ;
+}
+
+.top{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    gap: 2.5rem;
+    width: 86%;
+}
+
+.topApp{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 68.5%;
+}
+
+.topButtons{
+    display: flex;
+    gap: 12px;
+}
+
+.buttonSelect{
+    border: 2px solid var(--color-grey-5);
+    background-color: var(--color-mode);
+    border-radius: var(--radius-1);
+    padding: 8px 14px;
+}
+
+.buttonSelect:hover{
+    cursor: pointer;
+    border: 2px solid var(--color-brand-1);
+}
+
+.divBES{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 3rem;
+}
+
+.clicked{
+    background-color: var(--color-brand-3);
+    border: 2px solid var(--color-brand-1);
+}

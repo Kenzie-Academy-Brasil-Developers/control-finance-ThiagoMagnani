@@ -1,11 +1,5 @@
 @import url("https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Nunito:wght@600&display=swap");
 
-* {
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
-}
-
 :root {
   --color-brand-1: #6741d9;
   --color-brand-2: #4c3299;
@@ -19,6 +13,8 @@
   --color-grey-1-opacity-5: rgba(0, 0, 0, 0.5);
   --fixed-white: #ffffff;
   --color-mode: #ffffff;
+
+  --title-size-1: 1.50rem;
 
   --font-size-1: 1.25rem;
   --font-size-2: 1rem;
@@ -43,6 +39,9 @@
 
 body {
   font-family: var(--font-family-1);
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
 }
 
 .container {

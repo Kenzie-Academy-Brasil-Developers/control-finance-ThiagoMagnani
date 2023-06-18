@@ -17,8 +17,59 @@
     <link rel="stylesheet" href="./src/styles/globalStyles.css" />
     <link rel="stylesheet" href="./src/styles/index.css" />
   </head>
+
   <body>
-    <main id="app"></main>
+    <header>
+      <h1><span class="spanTitleColor">Control</span> Finance</h1>
+      <button class="buttonHeader">Registrar novo valor</button>
+    </header>
+
+    <dialog class="modal_controller">
+      <div class="modal_container">
+        <div class="modal_container_header">
+          <p class="titleModal">Registro de Valor</p>
+          <button class="buttonCloseModal">X</button>
+        </div>
+        <p class="textModal">Digite o valor e em seguida aperte no botão referente ao tipo do valor</p>
+        <div class="modal_container_value">
+          <label>Valor</label>
+          <div class="divBoxValue">
+            <span class="rs">R$</span>
+            <input type="number" id="inputValue" class="boxValue" placeholder="00,00">
+          </div>
+        </div>
+        <div class="divType">
+          <label class="titleType">Tipo de Entrada</label>
+          <select class="type">
+            <option value="0">Entrada</option>
+            <option value="1">Saída</option>
+          </select>
+        </div>
+        <div class="modal_container_botton">
+          <button class="cancelModal">Cancelar</button>
+          <button class="addValueModal">Inserir valor</button>
+        </div>
+      </div>
+    </dialog>
+    <main id="app">
+      <div class="top">
+        <div class="topApp">
+          <h2>Resumo Financeiro</h2>
+          <div class="topButtons">
+            <button id="buttonAll" class="all buttonSelect" onclick="sumAll()">Todos</button>
+            <button id="buttonEntry" class="entry buttonSelect" onclick="sumEntry()">Entradas</button>
+            <button id="buttonOut" class="outings buttonSelect" onclick="sumOut()">Saídas</button>
+          </div>
+        </div>
+        <div class="boxSumValues">
+          <p>Soma dos valores</p>
+          <p><span class="sumValues"></span></p>
+        </div>
+        <div class="divList">
+          <ul class="list"></ul>
+        </div>
+      </div>
+    </main>
     <script src="./src/scripts/modal.js"></script>
     <script src="./src/scripts/valuesData.js"></script>
     <script src="./src/scripts/index.js"></script>
