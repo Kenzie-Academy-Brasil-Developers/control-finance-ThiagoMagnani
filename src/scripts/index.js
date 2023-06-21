@@ -129,7 +129,7 @@ function modifyButton(value){
 function addListButton(value) {
   const buttonAdd = document.querySelector(".addValueModal");
   const boxValue = document.querySelector(".boxValue");
-  const buttonValue = document.querySelectorAll('.buttonValue');
+  const buttonValue = document.querySelectorAll('.buttonValueModal');
   let valueButton = 0;
   
   buttonValue.forEach(button => {

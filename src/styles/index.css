@@ -21,6 +21,7 @@ header{
 
 .divType{
     display: flex;
+    align-items: center;
     gap: 1.1rem;
 }
 

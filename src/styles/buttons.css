@@ -22,6 +22,17 @@
     color: var(--color-grey-2);
 }
 
+.buttonValueModal{
+    border: 2px solid var(--color-grey-5);
+    background-color: var(--color-mode);
+    border-radius: var(--radius-2);
+    padding: 0.3rem 0.5rem;
+}
+
+.buttonValueModal:hover{
+    border: 2px solid var(--color-brand-2);
+}
+
 .buttonCloseModal:hover{
     cursor: pointer;
 }
