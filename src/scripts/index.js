@@ -34,14 +34,18 @@ function convertToBRL(value){
     return Number(value).toLocaleString('pt-BR', {style: 'currency', currency: 'BRL'});
 }
 
-function insertValue() {
+function insertValue(value) {
   const boxValue = Number(document.querySelector(".boxValue").value);
   const type = Number(document.querySelector(".type").value);
+
   const obj = {
-    id: insertedValues.id,
+    id: value.length + 1,
     value: boxValue,
     categoryID: type,
   };
+
+  console.log(boxValue);
+  console.log(type);
 
   insertedValues.push(obj);
   checkClicked();
@@ -122,14 +126,30 @@ function modifyButton(value){
     }
 }
 
-function addListButton() {
+function addListButton(value) {
   const buttonAdd = document.querySelector(".addValueModal");
+  const boxValue = document.querySelector(".boxValue");
+  const buttonValue = document.querySelectorAll('.buttonValue');
+  let valueButton = 0;
+  
+  buttonValue.forEach(button => {
+    button.addEventListener("click", () => {
+      valueButton = Number(button.value);
+    })
+  });
+  
   buttonAdd.addEventListener("click", (e) => {
+    let obj = {
+      id: value.length + 1,
+      value: Number(boxValue.value),
+      categoryID: valueButton,
+    };
     e.preventDefault();
-    insertValue();
+    insertedValues.push(obj);
+    checkClicked();
   });
 }
-addListButton();
+addListButton(insertedValues);
 
 function removeListButton(values, buttonRem) {
   buttonRem.addEventListener("click", function () {
